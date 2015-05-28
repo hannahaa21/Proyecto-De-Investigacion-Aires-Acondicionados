@@ -30,19 +30,20 @@
             </div>
             
             <div class="form-group">
-                <button class="btn btn-primary btn-lg btn-block" onclick= "location.href = '#/'+funcionIp() + '/ON';configAire()" >Configura tu aire</button>
+                <button class="btn btn-primary btn-lg btn-block" onclick= "window.open('http://'+funcionIp().toString()+ '/ON');configAire()" >Configura tu aire</button>
               <span><a onclick= "funcionInfo()">Need help?</a></span>
               <script>
               function funcionIp()
               {
                 var aire = document.getElementById("ipAire");
                 var aireS = aire.value;
-                return aireS; 
+                return aireS.toLocaleString(); 
+                
               }
               
               function configAire()
               {
-                  window.alert("Se esta configurando tu aire, cuando este listo regresa a la pagina principal");
+                  window.alert("Se esta configurando tu aire con la ip: "+funcionIp()+", cuando este listo regresa a la pagina principal");
               }
                     function funcionInfo()
                   {
