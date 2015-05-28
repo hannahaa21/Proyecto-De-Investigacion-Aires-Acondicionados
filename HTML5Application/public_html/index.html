@@ -21,6 +21,7 @@
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" href="img/icono.ico">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -28,7 +29,7 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <link rel="shortcut icon" href="img/icono.ico">
+    
  </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
@@ -64,7 +65,7 @@
                         <a class="page-scroll" href="#contact">Equipos requeridos</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#register">Registrate/Inicia sesión</a>
+                        <a class="page-scroll" href="Usuario.html">Revisa tus aires</a>
                     </li>
                 </ul>
             </div>
@@ -119,16 +120,17 @@
                         <center><img style="height:250px;width:200px" src="img/mpg.jpg" class="img-responsive img-circle" alt=""  width="304" height="236">
                             <br>
                         <h4>Maria Paula González Rodríguez</h4>
-                        <h6>Lider y coordinadora del proyecto<br>9mo Semestre<br>Universidad de los Andes<br>Ingenieria Electronica</h6>
+                        <h6>Lider y coordinadora del proyecto<br><br>9mo Semestre<br><br>Universidad de los Andes<br><br>Ingenieria Electronica</h6>
                        </center>
                     </div>
                 </div>
                 <div class="col-sm-6">
                     <div class="team-member">
                         <center><img style="height:250px;width:200px" src="img/jp.jpg" class="img-responsive img-circle" alt="">
-                        <h4>Juan Pablo Arévalo Álvarez</h4>
+                        <br>
+                            <h4>Juan Pablo Arévalo Álvarez</h4>
                         <h6 >Desarrollador de SoftWare<br><br>
-                            7mo Semestre<br>
+                            7mo Semestre<br><br>
                             Universidad de los Andes<br><br>
                             Ingenieria Electronica e Ingenieria de sistemas</h6>
                        </center>
@@ -147,144 +149,18 @@
                 <h2>Equipos requeridos</h2>
                 <div>
                     <p>Arduino uno</p>
-                    <center><img style="height:450px;width:450px" src="img/arduino.jpg" class="img-responsive img-circle" alt=""></center>
+                    <center><img style="height:350px;width:400px" src="img/arduino.jpg" class="img-responsive img-circle" alt=""></center>
                 </div>
                 <br>
                 <div>
                     <p>Aire acondicionado</p>
-                    <center><img style="height:500px;width:1000px" src="img/aire.jpg" class="img-responsive img-circle" alt=""></center>
+                    <center><img style="height:450px;width:950px" src="img/aire.jpg" class="img-responsive img-circle" alt=""></center>
                 </div>
             </div>
         </div>
     </section>
-    <div>
-        <h1><br><br><br><br><br><br><br><br></h1> 
-    </div>
-    <!-- Register Section -->
-    <section id="register">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Registrese/inicie sesion</h2>
-                    <hr class="star-primary">
-                </div>
-            </div>
-            
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
-                    <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
-                    
-                    <form name="sentMessage" id="registrarse" novalidate>
-                        <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label>Nombre</label>
-                                <input type="text" class="form-control" placeholder="Nombre" id="NOMBRE" required data-validation-required-message="Porfavor ingrese su nombre.">
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label>Direccion electronica</label>
-                                <input type="email" class="form-control" placeholder="Direccion electronica" id="DIRECCION_ELECTRONICA" required data-validation-required-message="Porfavor ingrese su direccion electronica.">
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label>Telefono</label>
-                                <input type="tel" class="form-control" placeholder="Telefono" id="TELEFONO" required data-validation-required-message="Porfavor ingrese su numero telefonico.">
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        
-                        <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label>Departamento</label>
-                                <input type="text" class="form-control" placeholder="Departamento" id="DEPARTAMENTO" required data-validation-required-message="Porfavor ingrese su departamento">
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label>Ciudad</label>
-                                <input type="text" class="form-control" placeholder="Ciudad" id="CIUDAD" required data-validation-required-message="Porfavor ingrese su ciudad">
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        
-                       
-                        <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label>Tipo de documento</label>
-                                <input type="text" class="form-control" placeholder="Tipo de documento (C.C, T.I, C.E)" id="TIPO_DOCUMENTO" required data-validation-required-message="Porfavor ingrese su tipo de documento">
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label>Numero de documento</label>
-                                <input type="number" class="form-control" placeholder="Numero de documento" id="NUMERO_DOCUMENTO" required data-validation-required-message="Porfavor ingrese su numero de documento">
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        
-                        
-                        <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label>Contrase&ntildea</label>
-                                <input type="text" class="form-control" placeholder="Contraseña" id="NUMERO_DOCUMENTO" required data-validation-required-message="Porfavor ingrese su numero de documento">
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-
-                        <br>
-                        <div id="success"></div>
-                        <div class="row">
-                            <div class="form-group col-xs-12">
-                                <a href="Usuario.html" class="btn btn-primary">Registrate</a>
-                                <a href="Usuario.html" class="btn btn-primary">Registrate con Facebook</a>   
-                            </div>
-                            
-                        </div>
-                      
-                        
-                        </form>
-                </div>
-                </div>
-                        <div class="row">
-                       <div class="col-lg-8 col-lg-offset-2">
-                    <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
-                    <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
-                    <form name="sentMessage" id="iniciarSesion" novalidate>
-                        <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label>Direccion electronica</label>
-                                <input type="email" class="form-control" placeholder="Direccion electronica" id="DIRECCION_ELECTRONICA" required data-validation-required-message="Porfavor ingrese su direccion electronica">
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label>Contraseña</label>
-                                <input type="text" class="form-control" placeholder="Contraseña" id="CONTRASE�A" required data-validation-required-message="Porfavor ingrese su contrase�a">
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <br>
-                        <div id="success"></div>
-                        <div class="row">
-                            <div class="form-group col-xs-12">
-                                <a href="Usuario.html" class="btn btn-primary">Inicia sesión</a>
-                                <a href="Usuario.html" class="btn btn-primary">Inicia sesión con Facebook</a>
-                            </div>
-                        </div>
-                        
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
+    
+    
     <!-- Map Section -->
     <div id="map"></div>
 
