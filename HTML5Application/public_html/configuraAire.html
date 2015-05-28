@@ -30,6 +30,11 @@
             </div>
             <div class="form-group">
                 <input type="number" id="temper" class="form-control input-lg" placeholder="Temperatura deseada">
+                <select id="seleccion">
+                    <option value="C">Celsius</option>
+                    <option value="F">Farenheit</option>
+                    <option value="K">Kelvin</option>
+                </select>
             </div>
             <div class="form-group">
                 <h4>Tiempo de llegada</h4>
@@ -45,11 +50,60 @@
               {
                 var ip = document.getElementById("ipAire");
                 var ipS = ip.value;
-                var tempe = document.getElementById("temper")
-                var tempeS = tempe.value;
-                var tiemp = document.getElementById("tiempo")
+                var tempe = document.getElementById("temper");
+                var tempeS = parseInt(tempe.value);
+                var tiemp = document.getElementById("tiempo");
                 var tiempS = tiemp.value;
-                return ipS+"/"+ tempeS+"/"+ tiempS; 
+                var selec = document.getElementById("seleccion");
+                console.log(selec.value);
+                if ((tempeS>32 || tempeS<10) && selec.value==="C")
+                {
+                    window.alert("Favor ingrese una temperatura entre 10°C y 35°C");
+                    return 'ERROR'; 
+                }
+                if ((tempeS>90 || tempeS<50) && selec.value==="F")
+                {
+                    window.alert("Favor ingrese una temperatura entre 50°F y 90°F");
+                    return 'ERROR'; 
+                }
+                if ((tempeS>306 || tempeS<284) && selec.value==="K")
+                {
+                    window.alert("Favor ingrese una temperatura entre 306K y 284K");
+                    return 'ERROR'; 
+                }
+                var d = new Date();
+                var h = parseInt(d.getHours());
+                var m = parseInt(d.getMinutes());
+                console.log(h+"..."+m);
+                var tme= tiempS.split(":");
+                console.log(tme[0]+"/"+tme[1]);
+                var hrs = parseInt(tme[0]);
+                var mins = parseInt(tme[1]);
+                if(h>hrs)
+                {
+                    console.log("if 1");
+                    window.alert("Favor ingrese una hora mayor a la actual");
+                    return 'ERROR';
+                }
+                if (h===hrs)
+                {
+                    if (m>mins)
+                    {
+                        console.log("if 2");
+                        window.alert("Favor ingrese una hora mayor a la actual");
+                        return 'ERROR';
+                    }
+                    else
+                    {
+                        console.log("if 3");
+                        return ipS+"/"+ tempeS+"/"+ h +":" +m  +"/"+ tiempS;    
+                    }
+                }
+                if (h<hrs)
+                {
+                    console.log("if 4");
+                    return ipS+"/"+ tempeS+"/"+ h +":" +m  +"/"+ tiempS;    
+                }
               }
               
               function configAire()
